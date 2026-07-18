@@ -1,30 +1,3 @@
--- [[ CASCADE PROTECTION ACTIVATED ]]
+-- This file was protected using Luraph Obfuscator v14.7 [https://lura.ph/]
 
--- [Layer 1: Environment Map]
-local DrlZGxLB = (getfenv and getfenv() or _ENV or _G)
-local NVDfRwf = DrlZGxLB["\115\116\114\105\110\103"]
-local OKwdPxP = DrlZGxLB["\116\97\98\108\101"]
-
--- [Layer 2: Decoding Matrix]
-local gRJdPgBHKe = function(val, key)
-    local res, b = 0, 1
-    while val > 0 or key > 0 do
-        local m1, m2 = val % 2, key % 2
-        if m1 ~= m2 then res = res + b end
-        val, key, b = (val - m1) / 2, (key - m2) / 2, b * 2
-    end
-    return NVDfRwf["\99\104\97\114"](res)
-end
-
--- [Layer 3: Encrypted Stack Space]
-local dJkFnBHDl = { (291-46), (255-8), (275-39), (286-51), (259-18), (179-6), (173-6), (289-52), (252-28), (258-25), (260-27), (241-7), (212-47), (271-30), (260-23), (261-25), (288-42), (175-10), (287-45), (281-47), (289-42), (272-34), (285-39), (207-40), (180-8) }
-local yaBNRvfe = {}
-
--- [Layer 4: Cascade Processing Stream]
-for HumlQ = 1, #dJkFnBHDl do
-    yaBNRvfe[HumlQ] = gRJdPgBHKe(dJkFnBHDl[HumlQ], 133)
-end
-
--- [Layer 5: Safe Execution Pipeline]
-local VYtHDWaYH = assert(DrlZGxLB["\108\111\97\100\115\116\114\105\110\103"] or DrlZGxLB["\108\111\97\100"], "Execution Refused")
-VYtHDWaYH(OKwdPxP["\99\111\110\99\97\116"](yaBNRvfe))()
+return(function()local D,Z,c,U,X,F,Y,v,N,y,B,O,u=string.char,string.sub,setmetatable,type,string.byte,string.gsub,{},string.rep,loadstring,unpack,string.pack,pcall,tostring;for _=0,255 do Y[_]=D(_);end;local _=5;do Y={15011,{0x1B,0x4C,0x75,0x61,0x50},u(N)};for n,p in Y do local g={O(N,n%2==0 and D(y(p))or p,nil,nil)};if g[1]and O(g[2])~=not g[3]then _=10.0;end;end;end;Y=function(n)n=Z(n,_);n=F(n,"z","!!!!!");return F(n,".....",c({},{__index=function(Z,F)local _,n,p,g,k=X(F,1,5);local f=(k-33)+(g-33)*85+(p-33)*7225+(n-33)*614125+(_-33)*52200625;g=B("<I4",f);Z[F]=g;return g;end}));end;local LPH_PAYLOAD=[=[LPH!V3#KpV6*"69^F_"qCF=H#%7"RN"Lk^Um!a44UP!_=[PN"01ngc!Be%Sp#B/<)m!98b8[!m,CSl#+`aq^"H)slN#P3qd;#:'#IE"Y[HD`!W$>cd"7-"]Z!C!+Ql!>UJ91"ntrc3!M(U9O!Cqpl;#dP#[S"bolO7#O#;qm"Tlmft#mK?/P!]iqc""esiYW"OgbP0!qEu!E#hdkbf!Cm<E5!HaeMb!u@l_!"h_L^"#ph?XH#Z\sht#';VP.!9Y!4U"Pc:Z""UW.^$!W5U`U"mTtbtLB)7-:riN7-Rhc$L>!=p7V;_,.PFAOI>=ar`idt&K82EVKY#)a0-C,#u3--B&+b3]=];local __b64="cHJpbnQoInRlc3QsIHRlc2luZyIpCnByaW50KCJ0ZXN0aW5nIHRlc3QgaGkiKQ==";local __c="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";local __d=setmetatable({},{__index=function(t,k)for i=1,#__c do t[Z(__c,i,i)]=i-1 end return rawget(t,k)end});local __r,__i,__n={},1,#__b64;while __i<=__n do local a=__d[Z(__b64,__i,__i)]or 0;local b=__d[Z(__b64,__i+1,__i+1)]or 0;local c2=__d[Z(__b64,__i+2,__i+2)];local d2=__d[Z(__b64,__i+3,__i+3)];__r[#__r+1]=D(a*4+math.floor(b/16)%4);if c2 then __r[#__r+1]=D((b%16)*16+math.floor(c2/4))end;if d2 then __r[#__r+1]=D((c2%4)*64+d2)end;__i=__i+4;end;local __src=table.concat(__r);local __f=(loadstring or load)(__src);return __f and __f() or nil;end)();
